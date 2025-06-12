@@ -1,24 +1,63 @@
-# 🎙️ AI Voice Chat App (Flask + SocketIO)
+# 🎙️ AI Voice Chat Web App  
+![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)  
+Real-time voice and text chat using Flask, Socket.IO, SpeechRecognition, and gTTS.
 
-A real-time web app that allows you to:
-- Send messages by typing or speaking
-- Convert voice to text (speech recognition)
-- Convert text to voice (speech synthesis)
+---
+
+## ✨ Overview
+
+This AI-powered web application allows users to:
+- 💬 Chat with text messages
+- 🎤 Speak and convert voice to text (Speech-to-Text)
+- 🔊 Convert typed messages to voice responses (Text-to-Speech)
+- ⚡ Communicate in real-time using WebSockets (Socket.IO)
+
+Everything runs directly in the browser — no external app needed.
+
+---
 
 ## 🚀 Features
-- 🧠 AI-style chat interface (user & AI bubbles)
-- 🎤 Record voice via browser & transcribe
-- 🔊 Text-to-speech audio response using `gTTS`
-- ⚡ Real-time communication using Socket.IO
 
-## 📦 Tech Stack
-- **Backend**: Flask, Flask-SocketIO, SpeechRecognition, gTTS
-- **Frontend**: HTML, CSS, JavaScript
-- **Audio Handling**: Web APIs + Python libs
+✅ Real-time AI-style chat interface  
+✅ Voice-to-text transcription using `SpeechRecognition`  
+✅ Text-to-speech conversion using `gTTS`  
+✅ WebSocket-based instant communication  
+✅ Stylish chat bubbles with audio player  
+✅ 🎧 Works in most modern browsers  
 
-## 🛠️ Installation
+---
 
-1. **Clone this repository**
+## 📸 Demo
+
+>![image](https://github.com/user-attachments/assets/8f848e9d-13b9-4002-a725-3f6e9835d3da)
+
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer         | Technology                |
+|---------------|---------------------------|
+| **Backend**   | Flask, Flask-SocketIO     |
+| **Frontend**  | HTML, CSS, JavaScript     |
+| **Voice APIs**| SpeechRecognition, gTTS   |
+| **WebSocket** | Socket.IO                 |
+
+---
+
+## 🔧 Setup Instructions
+
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/your-username/flask-voice-chat.git
 cd flask-voice-chat
+python -m venv venv
+# Activate:
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+pip install -r requirements.txt
+##Run
+python app.py
